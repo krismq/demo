@@ -42,4 +42,21 @@
 到此就可以，拉去GitHub上的项目了
 ![](https://i.imgur.com/XU7166j.png)
 
-    
+- `git log` 命令显示从最近到最远的提交日志
+![](https://i.imgur.com/lJDKztO.png)
+
+- `git log --pretty=oneline`
+![](https://i.imgur.com/P1vV8G5.png)
+
+- 版本回退 `git reset --hard HEAD^`
+
+  		用 HEAD 表示当前版本
+		上一个版本就是  HEAD^
+		上上一个版本就是 HEAD^^
+
+- 回退到指定的版本 `git reset --hard 版本号`
+
+ 		版本号没必要写全，前几位就可以了，Git会自动去找。当然也不能只写前一两位，因为Git可能会找到多个版本号，就无法确定是哪一个了
+
+- Git提供了一个命令 `git reflog` 用来记录你的每一次命令：
+![](https://i.imgur.com/eSEgsWY.png)
